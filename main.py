@@ -42,7 +42,7 @@ label_style.configure("TLabel", foreground="white", background="MediumPurple1")
 input_style = Style()
 input_style.configure("TEntry", foreground="black", background="white")
 
-top_label = Label(window, text="", background="MediumPurple2")
+top_label = Label(window, text="")
 top_label.pack()
 
 red_label = Label(window, text="Enter something red (e.g. roses):")
