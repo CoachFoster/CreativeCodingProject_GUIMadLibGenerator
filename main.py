@@ -82,11 +82,15 @@ bottom_label = Label(window, text="")
 bottom_label.pack()
 
 # adding a generate button
-button1 = Button(window, text="Generate", command = madlib_generator)
-button1.pack(side = LEFT)
+button_image = PhotoImage(file="fairyMagic2.png")
+button1 = Button(window, text="Generate MadLib", image = button_image, compound = TOP, command = madlib_generator)
+button1.pack()
+
+filler_label4 = Label(window, text="")
+filler_label4.pack()
 
 # adding Exit button
 qbutton = Button(window, text="Exit", command = exit_program)
-qbutton.pack(side = RIGHT)
+qbutton.pack()
 
 window.mainloop()  # GUI main event loop
