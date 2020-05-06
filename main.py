@@ -7,7 +7,11 @@ def exit_program():
 
 # function to display a popup window
 def madlib_generator():
-  madlib = red_input.get() + " are red.\n" + blue_input.get() + " are blue.\n" + "I like " + like_input.get() + ".\nBut, not as much as I love " + verb_input.get() + " with you!"
+  madlib = red_input.get().capitalize() + " are red,\n" + \
+           blue_input.get().lower() + " are blue.\n" + \
+           "I like " + like_input.get().lower() + \
+           ",\nbut not as much as I love\n" + \
+           verb_input.get().lower() + " with you!"
   print(madlib)
   madlib_popup(madlib)
 
