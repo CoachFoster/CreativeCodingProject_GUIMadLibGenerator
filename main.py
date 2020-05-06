@@ -15,9 +15,9 @@ def madlib_generator():
 def madlib_popup(msg):
   popup = Tk()
   popup.wm_title("Results")
-  popup.configure(bg="BluePurple")
+  popup.configure(bg="PaleTurquoise2")
 
-  label = Label(popup, text=msg, background="BluePurple")
+  label = Label(popup, text=msg, background="PaleTurquoise2")
   label.pack()
 
   button2 = Button(popup, text="OK", command = popup.destroy)
@@ -27,13 +27,13 @@ def madlib_popup(msg):
 
 window = Tk()
 window.title("MadLib Generator")
-window.configure(background="MediumPurple2")
+window.configure(background="MediumPurple1")
 
 button_style = Style()
 button_style.configure("TButton", padding=2, borderwidth=4)
 
 label_style = Style()
-label_style.configure("TLabel", foreground="white", background="MediumPurple2")
+label_style.configure("TLabel", foreground="white", background="MediumPurple1")
 
 input_style = Style()
 input_style.configure("TEntry", foreground="black", background="white")
